@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     function reservas($restaurante)
     {
         try {
-            $consulta = conectarBD()->prepare("SELECT * FROM mesa 
-        INNER JOIN reservas ON mesa.numMesa = reservas.numMesa 
+            $consulta = conectarBD()->prepare("SELECT * FROM mesa
+        INNER JOIN reservas ON mesa.numMesa = reservas.numMesa
         WHERE mesa.restaurante = :restaurante");
             $consulta->bindParam(":restaurante", $restaurante);
             if ($consulta->execute()) {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Icon/favicon logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Icon/favicon logo.avif" type="image/x-icon">
     <link rel="stylesheet" href="CSS/globales.css">
     <link rel="stylesheet" href="CSS/plano.css">
     <title>Elige las mesa</title>
@@ -69,11 +69,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </h1>
     <div>
         <label for="reservada">Reservada</label>
-    <img name="reservada" style="max-width: 35px;" src="Images/reservada.png" alt="Mesa Reservada">
+    <img name="reservada" style="max-width: 35px;" src="Images/reservada.avif" alt="Mesa Reservada">
     </div>
     <div>
         <label for="reservada">Disponible</label>
-        <img name="disponible" style="max-width: 35px;" src="Images/disponible.png" alt="Mesa Disponible">
+        <img name="disponible" style="max-width: 35px;" src="Images/disponible.avif" alt="Mesa Disponible">
     </div>
     <br><br><br>
     <form action="confirmacion.php" method="POST">
@@ -106,9 +106,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     // Use sitios() to get the capacity
                     if ($mesaReservada) {
-                        echo '<img class="disponible" src="Images/disponible.png" alt="Mesa Disponible">';
+                        echo '<img class="disponible" src="Images/disponible.avif" alt="Mesa Disponible">';
                     } else {
-                        echo '<img class="reservada" src="Images/reservada.png" alt="Mesa Reservada">';
+                        echo '<img class="reservada" src="Images/reservada.avif" alt="Mesa Reservada">';
                     }
                     echo "<br>";
                     echo 'Mesa ' . $mesaId;

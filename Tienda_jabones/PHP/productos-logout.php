@@ -16,7 +16,7 @@
         <a href="registro.php"><button>Registrarse</button></a>
     </nav>
     <div class="portada-cont">
-        <img class="portada" src="../Images/portada.png" alt="Foto de portada">
+        <img class="portada" src="../Images/portada.avif" alt="Foto de portada">
     </div>
 
     <h1>Bienvenido a ENJABON-(ARTE)</h1>

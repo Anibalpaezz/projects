@@ -27,7 +27,7 @@ if (!isset($_SESSION['usuario'])) {
         <a href="cerrar_sesion.php"><button>Cerrar sesion</button></a>
     </nav>
     <div class="portada-cont">
-        <img class="portada" src="../Images/portada.png" alt="Foto de portada">
+        <img class="portada" src="../Images/portada.avif" alt="Foto de portada">
     </div>
 
     <div class="titulos">

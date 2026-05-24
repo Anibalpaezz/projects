@@ -39,31 +39,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <td>
                         <input type="radio" name="opciones" id="opcion1">
                         <label id="fotos" for="opcion1">
-                            <img src="fotos/<?php echo $tipo ?>/1.jpg" alt="Foto de <?php echo $tipo ?>">
+                            <img src="fotos/<?php echo $tipo ?>/1.avif" alt="Foto de <?php echo $tipo ?>">
                         </label>
                     </td>
                     <td>
                         <input type="radio" name="opciones" id="opcion2">
                         <label id="fotos" for="opcion2">
-                            <img src="fotos/<?php echo $tipo ?>/2.jpg" alt="Foto de <?php echo $tipo ?>">
+                            <img src="fotos/<?php echo $tipo ?>/2.avif" alt="Foto de <?php echo $tipo ?>">
                         </label>
                     </td>
                     <td>
                         <input type="radio" name="opciones" id="opcion3">
                         <label id="fotos" for="opcion3">
-                            <img src="fotos/<?php echo $tipo ?>/3.jpg" alt="Foto de <?php echo $tipo ?>">
+                            <img src="fotos/<?php echo $tipo ?>/3.avif" alt="Foto de <?php echo $tipo ?>">
                         </label>
                     </td>
                     <td>
                         <input type="radio" name="opciones" id="opcion4">
                         <label id="fotos" for="opcion4">
-                            <img src="fotos/<?php echo $tipo ?>/4.jpg" alt="Foto de <?php echo $tipo ?>">
+                            <img src="fotos/<?php echo $tipo ?>/4.avif" alt="Foto de <?php echo $tipo ?>">
                         </label>
                     </td>
                     <td>
                         <input type="radio" name="opciones" id="opcion5">
                         <label id="fotos" for="opcion5">
-                            <img src="fotos/<?php echo $tipo ?>/5.jpg" alt="Foto de <?php echo $tipo ?>">
+                            <img src="fotos/<?php echo $tipo ?>/5.avif" alt="Foto de <?php echo $tipo ?>">
                         </label>
                     </td>
                 </tr>
