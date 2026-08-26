@@ -1,0 +1,16 @@
+To install haskell in windows the best option is using powershell with this command:
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { & ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -Interactive -DisableCurl } catch { Write-Error $_ }
+
+For windows on ARM first install wls with:
+wsl --install
+
+In case you need to install it in linux or macOS the command is this one:
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+
+In the installation process in every question say yes. Later on download the
+extension in you code editor and thats it.
+
+You can check the installation with this commands.
+ghc --version
+cabal --version
+haskell-language-server-wrapper --version
